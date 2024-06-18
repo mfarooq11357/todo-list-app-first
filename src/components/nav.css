@@ -1,0 +1,36 @@
+/* General styling for the navigation */
+.nav {
+    background-color: rgb(89, 37, 173);
+    height: 50px;
+    width: 100%; /* Change from 100vw to 100% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 0 40px;
+    box-sizing: border-box; /* Include padding in the total width */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Styling for the unordered list inside the nav */
+ul {
+    display: flex;
+    gap: 20px; /* Assuming you want a gap between list items */
+    padding: 0;
+    margin: 0; /* Remove default padding and margin */
+}
+
+/* Styling for each list item */
+.list {
+    list-style-type: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for list items */
+.list:hover {
+    font-weight: bold;
+    color: white;
+    transform: scale(1.1);
+}
